@@ -1,0 +1,27 @@
+/* ScholarSpace — Shared Styles */
+
+:root {
+    --background: #F1F5EF;
+    --cream: #FFFCF5;
+    --blush: #FCEEF1;
+    --sage: #587A58;
+    --text: #293B3C;
+    --muted: #81747A;
+    --border: #EAE3DF;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
