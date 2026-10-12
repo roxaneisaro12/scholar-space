@@ -25,3 +25,55 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
+/* Home page header */
+
+.home-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 7%;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.brand-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 14px;
+    background-color: var(--blush);
+    color: var(--sage);
+    font-size: 28px;
+}
+
+.brand strong {
+    display: block;
+    font-size: 21px;
+}
+
+.brand small {
+    display: block;
+    margin-top: 4px;
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.nav-button {
+    padding: 12px 20px;
+    border: 1px solid var(--border);
+    border-radius: 25px;
+    background-color: var(--cream);
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+.nav-button:hover {
+    background-color: var(--blush);
+}
