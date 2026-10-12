@@ -1,9 +1,4 @@
 
-/* ========================================
-   SCHOLARSPACE
-   Warm cream and blush pink theme
-   ======================================== */
-
 :root {
     --cream: #F6F7F1;
     --cream-dark: #E8EDE3;
@@ -143,10 +138,6 @@ p {
     letter-spacing: 1.4px;
 }
 
-/* ========================================
-   HOME PAGE HEADER
-   ======================================== */
-
 .home-header {
     display: flex;
     align-items: center;
@@ -189,10 +180,6 @@ p {
     border-color: var(--rose);
     background-color: var(--blush-light);
 }
-
-/* ========================================
-   HOME PAGE HERO
-   ======================================== */
 
 .home-hero {
     display: grid;
@@ -268,11 +255,9 @@ p {
     font-style: italic;
 }
 
-/* Home page decorative planning card */
-
 .hero-visual {
     padding: 32px;
-    border: 1px solid #E9D6D2;
+    border: 1px solid var(--border);
     border-radius: 8px;
     background-color: var(--blush-light);
     box-shadow: var(--shadow);
@@ -283,7 +268,7 @@ p {
     align-items: center;
     justify-content: space-between;
     padding-bottom: 20px;
-    border-bottom: 1px solid #E8D8D5;
+    border-bottom: 1px solid var(--border);
     color: var(--muted);
     font-size: 9px;
     font-weight: 700;
@@ -319,7 +304,7 @@ p {
     align-items: center;
     gap: 14px;
     padding: 17px 0;
-    border-top: 1px solid #E8D8D5;
+    border-top: 1px solid var(--border);
 }
 
 .task-number {
@@ -357,10 +342,6 @@ p {
     font-weight: 700;
     letter-spacing: 1.5px;
 }
-
-/* ========================================
-   HOME PAGE FEATURES
-   ======================================== */
 
 .home-features {
     padding: 75px 8%;
@@ -447,8 +428,6 @@ p {
     font-weight: 700;
 }
 
-/* Home page call to action */
-
 .home-cta {
     display: flex;
     align-items: center;
@@ -500,12 +479,8 @@ p {
     font-size: 10px;
 }
 
-/* ========================================
-   DASHBOARD PAGE LAYOUT
-   ======================================== */
-
 .dashboard-page {
-    background-color: #FCF7F1;
+    background-color: var(--cream);
 }
 
 .dashboard-layout {
@@ -513,8 +488,6 @@ p {
     grid-template-columns: 235px minmax(0, 1fr);
     min-height: 100vh;
 }
-
-/* Sidebar */
 
 .sidebar {
     display: flex;
@@ -539,7 +512,7 @@ p {
 
 .sidebar-label {
     margin: 12px 10px 14px;
-    color: #A1928C;
+    color: var(--muted);
     font-size: 9px;
     font-weight: 700;
     letter-spacing: 1.4px;
@@ -618,7 +591,7 @@ p {
     bottom: -24px;
     width: 65px;
     height: 65px;
-    border: 1px solid #DDBDC0;
+    border: 1px solid var(--rose);
     border-radius: 50%;
 }
 
@@ -634,8 +607,6 @@ p {
     color: var(--rose-dark);
 }
 
-/* Dashboard top bar */
-
 .dashboard-main {
     min-width: 0;
 }
@@ -648,7 +619,7 @@ p {
     min-height: 85px;
     padding: 16px 4%;
     border-bottom: 1px solid var(--border);
-    background-color: var(--cream);
+    background-color: var(--white);
 }
 
 .breadcrumb {
@@ -699,8 +670,6 @@ p {
     font-size: 10px;
 }
 
-/* Dashboard content */
-
 .dashboard-content {
     max-width: 1500px;
     margin: 0 auto;
@@ -733,8 +702,6 @@ p {
 .dashboard-welcome .primary-button {
     flex-shrink: 0;
 }
-
-/* Statistics cards */
 
 .dashboard-stats {
     display: grid;
@@ -783,8 +750,6 @@ p {
     font-size: 10px;
 }
 
-/* Dashboard section headings */
-
 .content-section {
     margin-top: 40px;
 }
@@ -814,8 +779,6 @@ p {
     letter-spacing: 0.7px;
 }
 
-/* Course cards and progress bars */
-
 .courses-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -833,7 +796,7 @@ p {
 
 .course-card:hover {
     transform: translateY(-2px);
-    border-color: #D7B3B5;
+    border-color: var(--rose);
 }
 
 .course-card-top {
@@ -848,7 +811,7 @@ p {
     place-items: center;
     width: 37px;
     height: 37px;
-    border: 1px solid #E7C9CA;
+    border: 1px solid var(--border);
     border-radius: 4px;
     background-color: var(--blush-light);
     color: var(--rose-dark);
@@ -858,15 +821,15 @@ p {
 }
 
 .course-code-alt {
-    background-color: #F5E9E0;
-    border-color: #E5D3C4;
-    color: #896A57;
+    background-color: var(--cream-dark);
+    border-color: var(--border);
+    color: var(--rose-dark);
 }
 
 .course-code-deep {
-    background-color: #F0E3E3;
-    border-color: #DFC8CA;
-    color: #79555A;
+    background-color: var(--blush);
+    border-color: var(--border);
+    color: var(--rose-dark);
 }
 
 .course-status {
@@ -906,10 +869,11 @@ p {
 }
 
 .progress-track {
+    width: 100%;
     height: 5px;
     overflow: hidden;
     border-radius: 5px;
-    background-color: #F0E7E1;
+    background-color: var(--cream-dark);
 }
 
 .progress-fill {
@@ -917,8 +881,6 @@ p {
     border-radius: 5px;
     background-color: var(--rose);
 }
-
-/* Timetable and right column */
 
 .dashboard-lower {
     display: grid;
@@ -954,7 +916,7 @@ p {
     align-items: center;
     gap: 13px;
     padding: 14px 0;
-    border-bottom: 1px solid #F0E6DF;
+    border-bottom: 1px solid var(--border);
 }
 
 .schedule-item:last-child {
@@ -1002,14 +964,12 @@ p {
     gap: 18px;
 }
 
-/* Upcoming deadlines */
-
 .deadline-item {
     display: flex;
     align-items: flex-start;
     gap: 12px;
     padding: 14px 0;
-    border-bottom: 1px solid #F0E6DF;
+    border-bottom: 1px solid var(--border);
 }
 
 .deadline-item:first-child {
@@ -1038,8 +998,6 @@ p {
     font-weight: 700;
 }
 
-/* Recent activity */
-
 .activity-panel .section-title {
     margin-bottom: 8px;
 }
@@ -1065,8 +1023,6 @@ p {
     font-size: 9px;
 }
 
-/* Encouragement section */
-
 .encouragement-card {
     display: flex;
     align-items: center;
@@ -1074,7 +1030,7 @@ p {
     gap: 24px;
     margin-top: 24px;
     padding: 25px 28px;
-    border: 1px solid #E8D1D1;
+    border: 1px solid var(--border);
     border-radius: 5px;
     background-color: var(--blush-light);
 }
@@ -1095,13 +1051,11 @@ p {
 
 .encouragement-mark {
     flex-shrink: 0;
-    color: #D7B0B4;
+    color: var(--rose);
     font-family: Georgia, "Times New Roman", serif;
     font-size: 60px;
     font-style: italic;
 }
-
-/* Dashboard footer */
 
 .dashboard-footer {
     display: flex;
@@ -1125,9 +1079,170 @@ p {
     font-size: 10px;
 }
 
-/* ========================================
-   RESPONSIVE DESIGN
-   ======================================== */
+.analytics-section {
+    margin-top: 28px;
+}
+
+.analytics-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+    gap: 22px;
+}
+
+.chart-panel {
+    min-width: 0;
+    padding: 24px;
+    background-color: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    box-shadow: var(--shadow);
+}
+
+.chart-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.chart-heading h3 {
+    margin: 0;
+    color: var(--brown);
+    font-size: 16px;
+}
+
+.chart-heading p {
+    margin: 7px 0 0;
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.chart-total {
+    color: var(--rose-dark);
+    font-size: 15px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.study-chart {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    align-items: end;
+    gap: 12px;
+    min-height: 190px;
+    padding-top: 10px;
+}
+
+.bar-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    min-width: 0;
+}
+
+.bar-track {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    height: 145px;
+    overflow: hidden;
+    border-radius: 7px 7px 3px 3px;
+    background-color: var(--blush-light);
+}
+
+.bar-fill {
+    width: 65%;
+    min-height: 4px;
+    border-radius: 6px 6px 2px 2px;
+    background: linear-gradient(to top, var(--rose-dark), #A7B99F);
+    transition: height 0.3s ease;
+}
+
+.bar-fill:hover {
+    background: #405A43;
+}
+
+.bar-day {
+    color: var(--muted);
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.chart-note {
+    margin: 18px 0 0;
+    padding-top: 14px;
+    border-top: 1px solid var(--cream-dark);
+    color: var(--muted);
+    font-size: 11px;
+}
+
+.course-chart-list {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+}
+
+.course-chart-item {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.course-chart-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    font-size: 12px;
+}
+
+.course-chart-label span {
+    color: #596459;
+}
+
+.course-chart-label strong {
+    color: var(--rose-dark);
+    font-size: 12px;
+}
+
+.course-chart-item .progress-track {
+    width: 100%;
+    height: 8px;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: var(--cream-dark);
+}
+
+.course-chart-item .progress-fill {
+    height: 100%;
+    border-radius: 20px;
+    background: linear-gradient(to right, #A7B99F, var(--rose-dark));
+}
+
+.chart-summary {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: 26px;
+    padding: 16px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background-color: var(--blush-light);
+}
+
+.chart-summary strong {
+    color: var(--rose-dark);
+    font-size: 26px;
+}
+
+.chart-summary span {
+    color: var(--muted);
+    font-size: 11px;
+}
 
 @media (max-width: 1150px) {
     .dashboard-layout {
@@ -1155,6 +1270,12 @@ p {
     .home-hero {
         padding-right: 7%;
         padding-left: 7%;
+    }
+}
+
+@media (max-width: 900px) {
+    .analytics-grid {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -1398,6 +1519,30 @@ p {
         flex-direction: column;
         gap: 6px;
     }
+
+    .chart-panel {
+        padding: 16px;
+    }
+
+    .study-chart {
+        gap: 6px;
+    }
+
+    .bar-day {
+        font-size: 9px;
+    }
+
+    .chart-heading h3 {
+        font-size: 14px;
+    }
+
+    .chart-total {
+        font-size: 13px;
+    }
+
+    .course-chart-label {
+        font-size: 11px;
+    }
 }
 
 @media (max-width: 360px) {
@@ -1421,217 +1566,16 @@ p {
     .section-title h2 {
         font-size: 22px;
     }
-}
-
-/* ==================================
-   STUDY ANALYTICS SECTION
-   ================================== */
-
-.analytics-section {
-    margin-top: 28px;
-}
-
-.analytics-grid {
-    display: grid;
-    grid-template-columns: 1.2fr 1fr;
-    gap: 22px;
-}
-
-.chart-panel {
-    min-width: 0;
-    padding: 24px;
-    background-color: #FFFFFF;
-    border: 1px solid #DCE3D7;
-    border-radius: 14px;
-    box-shadow: 0 8px 24px rgba(48, 60, 50, 0.05);
-}
-
-.chart-heading {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 12px;
-    margin-bottom: 25px;
-}
-
-.chart-heading h3 {
-    margin: 0;
-    color: #303C32;
-    font-size: 16px;
-}
-
-.chart-heading p {
-    margin: 7px 0 0;
-    color: #778176;
-    font-size: 12px;
-}
-
-.chart-total {
-    color: #526B53;
-    font-size: 15px;
-    font-weight: 700;
-    white-space: nowrap;
-}
-
-/* WEEKLY STUDY HOURS BAR CHART */
-
-.study-chart {
-    display: grid;
-    grid-template-columns: repeat(7, minmax(0, 1fr));
-    align-items: end;
-    gap: 12px;
-    min-height: 190px;
-    padding-top: 10px;
-}
-
-.bar-column {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 10px;
-    min-width: 0;
-}
-
-.bar-track {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    width: 100%;
-    height: 145px;
-    overflow: hidden;
-    border-radius: 7px 7px 3px 3px;
-    background-color: #EEF2E9;
-}
-
-.bar-fill {
-    width: 65%;
-    min-height: 4px;
-    border-radius: 6px 6px 2px 2px;
-    background: linear-gradient(
-        to top,
-        #526B53,
-        #A7B99F
-    );
-    transition: height 0.3s ease;
-}
-
-.bar-fill:hover {
-    background: #405A43;
-}
-
-.bar-day {
-    color: #778176;
-    font-size: 11px;
-    font-weight: 500;
-}
-
-.chart-note {
-    margin: 18px 0 0;
-    padding-top: 14px;
-    border-top: 1px solid #E8EDE3;
-    color: #778176;
-    font-size: 11px;
-}
-
-/* COURSE COMPLETION PROGRESS BARS */
-
-.course-chart-list {
-    display: flex;
-    flex-direction: column;
-    gap: 21px;
-}
-
-.course-chart-item {
-    display: flex;
-    flex-direction: column;
-    gap: 9px;
-}
-
-.course-chart-label {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 12px;
-    font-size: 12px;
-}
-
-.course-chart-label span {
-    color: #596459;
-}
-
-.course-chart-label strong {
-    color: #526B53;
-    font-size: 12px;
-}
-
-.progress-track {
-    width: 100%;
-    height: 8px;
-    overflow: hidden;
-    border-radius: 20px;
-    background-color: #E8EDE3;
-}
-
-.progress-fill {
-    height: 100%;
-    border-radius: 20px;
-    background: linear-gradient(
-        to right,
-        #A7B99F,
-        #526B53
-    );
-}
-
-/* AVERAGE COMPLETION SUMMARY */
-
-.chart-summary {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    margin-top: 26px;
-    padding: 16px;
-    border: 1px solid #DCE3D7;
-    border-radius: 10px;
-    background-color: #EEF2E9;
-}
-
-.chart-summary strong {
-    color: #526B53;
-    font-size: 26px;
-}
-
-.chart-summary span {
-    color: #778176;
-    font-size: 11px;
-}
-
-/* RESPONSIVE DESIGN */
-
-@media (max-width: 900px) {
-    .analytics-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 560px) {
-    .chart-panel {
-        padding: 16px;
-    }
 
     .study-chart {
-        gap: 6px;
+        gap: 4px;
     }
 
     .bar-day {
-        font-size: 9px;
+        font-size: 8px;
     }
 
-    .chart-heading h3 {
-        font-size: 14px;
-    }
-
-    .chart-total {
-        font-size: 13px;
+    .chart-heading {
+        flex-wrap: wrap;
     }
 }
