@@ -203,3 +203,62 @@ a {
     text-align: center;
     font-size: 13px;
 }
+/* Dashboard header and welcome section */
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 7%;
+    border-bottom: 1px solid var(--border);
+    background-color: var(--cream);
+}
+
+.dashboard-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 45px 7%;
+}
+
+.dashboard-welcome {
+    margin-bottom: 35px;
+}
+
+.dashboard-welcome h1 {
+    margin: 12px 0;
+    font-size: clamp(30px, 4vw, 44px);
+}
+
+.dashboard-welcome > p:last-child {
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+.dashboard-stats {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.stat-card {
+    padding: 24px;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    background-color: var(--cream);
+}
+
+.stat-card span {
+    font-size: 25px;
+}
+
+.stat-card h2 {
+    margin: 16px 0 8px;
+    font-size: 32px;
+    color: var(--sage);
+}
+
+.stat-card p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 14px;
+}
