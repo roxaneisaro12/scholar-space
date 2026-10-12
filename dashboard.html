@@ -1,219 +1,363 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A student dashboard for managing courses, assignments, and class schedules.">
     <title>ScholarSpace | Dashboard</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="dashboard-page">
 
-    <header class="dashboard-header">
-        <a href="index.html" class="brand">
-            <span class="brand-icon">✿</span>
-            <span>
-                <strong>ScholarSpace</strong>
-                <small>Learn · Grow · Achieve</small>
-            </span>
-        </a>
+    <div class="dashboard-layout">
 
-        <a href="index.html" class="nav-button">Back to Home</a>
-    </header>
+        <aside class="sidebar">
+            <a href="index.html" class="brand sidebar-brand">
+                <span class="brand-mark">S</span>
+                <span class="brand-copy">
+                    <strong>ScholarSpace</strong>
+                    <small>YOUR STUDENT SPACE</small>
+                </span>
+            </a>
 
-    <main class="dashboard-content">
-        <section class="dashboard-welcome">
-            <p class="eyebrow">YOUR PERSONAL LEARNING SPACE</p>
-            <h1>Welcome back, Roxane! 🌷</h1>
-            <p>Keep growing, one small step at a time.</p>
-        </section>
+            <p class="sidebar-label">WORKSPACE</p>
 
-        <section class="dashboard-stats">
-            <article class="stat-card">
-                <span>📚</span>
-                <h2>5</h2>
-                <p>Active Courses</p>
-            </article>
+            <nav class="sidebar-nav" aria-label="Dashboard navigation">
+                <a href="#overview" class="sidebar-link active">
+                    <span class="nav-symbol">01</span>
+                    Overview
+                </a>
+                <a href="#courses" class="sidebar-link">
+                    <span class="nav-symbol">02</span>
+                    My Courses
+                </a>
+                <a href="#assignments" class="sidebar-link">
+                    <span class="nav-symbol">03</span>
+                    Assignments
+                </a>
+                <a href="#grades" class="sidebar-link">
+                    <span class="nav-symbol">04</span>
+                    Grades
+                </a>
+                <a href="#timetable" class="sidebar-link">
+                    <span class="nav-symbol">05</span>
+                    Timetable
+                </a>
+            </nav>
 
-            <article class="stat-card">
-                <span>📝</span>
-                <h2>3</h2>
-                <p>Pending Assignments</p>
-            </article>
+            <div class="sidebar-bottom">
+                <div class="sidebar-note">
+                    <span class="note-label">A GENTLE REMINDER</span>
+                    <p>You do not have to do everything at once.</p>
+                    <span class="note-decoration"></span>
+                </div>
 
-            <article class="stat-card">
-                <span>🌟</span>
-                <h2>88%</h2>
-                <p>Average Grade</p>
-            </article>
+                <a href="index.html" class="back-home">
+                    <span aria-hidden="true">&larr;</span> Back to Home
+                </a>
+            </div>
+        </aside>
 
-            <article class="stat-card">
-                <span>📅</span>
-                <h2>2</h2>
-                <p>Upcoming Exams</p>
-            </article>
-        </section>
-        <section class="courses-section">
-    <div class="section-title">
-        <div>
-            <p class="eyebrow">YOUR LEARNING JOURNEY</p>
-            <h2>My Courses</h2>
-        </div>
-        <span class="course-count">5 Courses</span>
+        <main class="dashboard-main" id="overview">
+
+            <header class="dashboard-topbar">
+                <div>
+                    <p class="breadcrumb">Workspace / Overview</p>
+                    <p class="topbar-date">YOUR PERSONAL LEARNING SPACE</p>
+                </div>
+
+                <div class="profile-summary">
+                    <div class="profile-avatar" aria-hidden="true">R</div>
+                    <div>
+                        <strong>Roxane Isaro</strong>
+                        <span>Student</span>
+                    </div>
+                </div>
+            </header>
+
+            <div class="dashboard-content">
+
+                <section class="dashboard-welcome">
+                    <div>
+                        <p class="eyebrow">MONDAY MOTIVATION</p>
+                        <h1>Welcome back, Roxane.</h1>
+                        <p>Let's make this week a good one, one task at a time.</p>
+                    </div>
+
+                    <a href="#assignments" class="primary-button">
+                        View My Tasks <span aria-hidden="true">&rarr;</span>
+                    </a>
+                </section>
+
+                <section class="dashboard-stats" aria-label="Academic overview">
+                    <article class="stat-card">
+                        <div class="stat-topline">
+                            <span>Active Courses</span>
+                            <span class="stat-index">01</span>
+                        </div>
+                        <h2>05</h2>
+                        <p>Courses this semester</p>
+                    </article>
+
+                    <article class="stat-card">
+                        <div class="stat-topline">
+                            <span>Pending Tasks</span>
+                            <span class="stat-index">02</span>
+                        </div>
+                        <h2>03</h2>
+                        <p>Assignments to complete</p>
+                    </article>
+
+                    <article class="stat-card" id="grades">
+                        <div class="stat-topline">
+                            <span>Average Grade</span>
+                            <span class="stat-index">03</span>
+                        </div>
+                        <h2>88<span class="stat-percent">%</span></h2>
+                        <p>Sample academic average</p>
+                    </article>
+
+                    <article class="stat-card">
+                        <div class="stat-topline">
+                            <span>Upcoming Exams</span>
+                            <span class="stat-index">04</span>
+                        </div>
+                        <h2>02</h2>
+                        <p>Scheduled assessments</p>
+                    </article>
+                </section>
+
+                <section class="content-section" id="courses">
+                    <div class="section-title">
+                        <div>
+                            <p class="eyebrow">YOUR LEARNING JOURNEY</p>
+                            <h2>My Courses</h2>
+                        </div>
+                        <span class="section-meta">05 COURSES</span>
+                    </div>
+
+                    <div class="courses-grid">
+
+                        <article class="course-card">
+                            <div class="course-card-top">
+                                <span class="course-code">WD</span>
+                                <span class="course-status">In progress</span>
+                            </div>
+                            <h3>Web Development</h3>
+                            <p class="course-description">HTML, CSS and JavaScript</p>
+                            <div class="progress-info">
+                                <span>Course progress</span><strong>85%</strong>
+                            </div>
+                            <div class="progress-track" role="progressbar" aria-label="Web Development progress" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-fill" style="width: 85%"></div>
+                            </div>
+                        </article>
+
+                        <article class="course-card">
+                            <div class="course-card-top">
+                                <span class="course-code course-code-alt">CN</span>
+                                <span class="course-status">In progress</span>
+                            </div>
+                            <h3>Computer Networks</h3>
+                            <p class="course-description">Networking fundamentals</p>
+                            <div class="progress-info">
+                                <span>Course progress</span><strong>70%</strong>
+                            </div>
+                            <div class="progress-track" role="progressbar" aria-label="Computer Networks progress" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-fill" style="width: 70%"></div>
+                            </div>
+                        </article>
+
+                        <article class="course-card">
+                            <div class="course-card-top">
+                                <span class="course-code course-code-deep">DS</span>
+                                <span class="course-status">In progress</span>
+                            </div>
+                            <h3>Data Structures</h3>
+                            <p class="course-description">Algorithms and problem solving</p>
+                            <div class="progress-info">
+                                <span>Course progress</span><strong>60%</strong>
+                            </div>
+                            <div class="progress-track" role="progressbar" aria-label="Data Structures progress" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-fill" style="width: 60%"></div>
+                            </div>
+                        </article>
+
+                        <article class="course-card">
+                            <div class="course-card-top">
+                                <span class="course-code course-code-alt">DB</span>
+                                <span class="course-status">In progress</span>
+                            </div>
+                            <h3>Database Systems</h3>
+                            <p class="course-description">SQL and database design</p>
+                            <div class="progress-info">
+                                <span>Course progress</span><strong>90%</strong>
+                            </div>
+                            <div class="progress-track" role="progressbar" aria-label="Database Systems progress" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-fill" style="width: 90%"></div>
+                            </div>
+                        </article>
+
+                        <article class="course-card">
+                            <div class="course-card-top">
+                                <span class="course-code course-code-deep">SE</span>
+                                <span class="course-status">In progress</span>
+                            </div>
+                            <h3>Software Engineering</h3>
+                            <p class="course-description">Design and development practices</p>
+                            <div class="progress-info">
+                                <span>Course progress</span><strong>75%</strong>
+                            </div>
+                            <div class="progress-track" role="progressbar" aria-label="Software Engineering progress" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-fill" style="width: 75%"></div>
+                            </div>
+                        </article>
+
+                    </div>
+                </section>
+
+                <div class="dashboard-lower">
+
+                    <section class="panel" id="timetable">
+                        <div class="section-title">
+                            <div>
+                                <p class="eyebrow">PLAN YOUR WEEK</p>
+                                <h2>My Timetable</h2>
+                            </div>
+                            <span class="section-meta">MON – FRI</span>
+                        </div>
+
+                        <div class="schedule-list">
+                            <article class="schedule-item">
+                                <span class="day-label">MON</span>
+                                <div class="schedule-details">
+                                    <strong>Web Development</strong>
+                                    <p>09:00 – 11:00 · Computer Lab</p>
+                                </div>
+                            </article>
+
+                            <article class="schedule-item">
+                                <span class="day-label">TUE</span>
+                                <div class="schedule-details">
+                                    <strong>Computer Networks</strong>
+                                    <p>10:00 – 12:00 · Room A12</p>
+                                </div>
+                            </article>
+
+                            <article class="schedule-item">
+                                <span class="day-label">WED</span>
+                                <div class="schedule-details">
+                                    <strong>Database Systems</strong>
+                                    <p>08:00 – 10:00 · Room B04</p>
+                                </div>
+                            </article>
+
+                            <article class="schedule-item">
+                                <span class="day-label">THU</span>
+                                <div class="schedule-details">
+                                    <strong>Data Structures</strong>
+                                    <p>13:00 – 15:00 · Room C02</p>
+                                </div>
+                            </article>
+
+                            <article class="schedule-item">
+                                <span class="day-label">FRI</span>
+                                <div class="schedule-details">
+                                    <strong>Software Engineering</strong>
+                                    <p>09:00 – 11:00 · Room B10</p>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+
+                    <div class="right-column">
+
+                        <section class="panel" id="assignments">
+                            <div class="section-title">
+                                <div>
+                                    <p class="eyebrow">STAY ON TRACK</p>
+                                    <h2>Upcoming Deadlines</h2>
+                                </div>
+                            </div>
+
+                            <div class="deadline-list">
+                                <article class="deadline-item">
+                                    <span class="deadline-marker"></span>
+                                    <div>
+                                        <strong>Web Development Assignment</strong>
+                                        <p>Website layout practice</p>
+                                        <span class="deadline-date">Due tomorrow</span>
+                                    </div>
+                                </article>
+
+                                <article class="deadline-item">
+                                    <span class="deadline-marker"></span>
+                                    <div>
+                                        <strong>Database Project</strong>
+                                        <p>Design and SQL queries</p>
+                                        <span class="deadline-date">Due in 4 days</span>
+                                    </div>
+                                </article>
+
+                                <article class="deadline-item">
+                                    <span class="deadline-marker"></span>
+                                    <div>
+                                        <strong>Data Structures Quiz</strong>
+                                        <p>Review algorithms</p>
+                                        <span class="deadline-date">Due in 6 days</span>
+                                    </div>
+                                </article>
+                            </div>
+                        </section>
+
+                        <section class="panel activity-panel">
+                            <div class="section-title">
+                                <div>
+                                    <p class="eyebrow">A LOOK BACK</p>
+                                    <h2>Recent Activity</h2>
+                                </div>
+                            </div>
+
+                            <div class="activity-item">
+                                <span class="activity-line"></span>
+                                <div>
+                                    <strong>Web Development</strong>
+                                    <p>Course progress updated</p>
+                                    <span class="activity-time">Recently</span>
+                                </div>
+                            </div>
+
+                            <div class="activity-item">
+                                <span class="activity-line"></span>
+                                <div>
+                                    <strong>Database Systems</strong>
+                                    <p>Project added to your plan</p>
+                                    <span class="activity-time">This week</span>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+
+                <section class="encouragement-card">
+                    <div>
+                        <p class="eyebrow">A NOTE TO YOURSELF</p>
+                        <h2>Progress over perfection.</h2>
+                        <p>Keep showing up for your goals. The small things count, too.</p>
+                    </div>
+                    <span class="encouragement-mark" aria-hidden="true">S.</span>
+                </section>
+
+                <footer class="dashboard-footer">
+                    <span>ScholarSpace</span>
+                    <p>Learn at your own pace. Keep moving forward.</p>
+                </footer>
+
+            </div>
+        </main>
     </div>
-
-    <div class="courses-grid">
-        <article class="course-card">
-            <div class="course-icon">💻</div>
-            <h3>Web Development</h3>
-            <p>HTML, CSS and JavaScript</p>
-            <div class="progress-info">
-                <span>Progress</span><strong>85%</strong>
-            </div>
-            <div class="progress-track">
-                <div class="progress-fill" style="width: 85%"></div>
-            </div>
-        </article>
-
-        <article class="course-card">
-            <div class="course-icon">🌐</div>
-            <h3>Computer Networks</h3>
-            <p>Networking fundamentals</p>
-            <div class="progress-info">
-                <span>Progress</span><strong>70%</strong>
-            </div>
-            <div class="progress-track">
-                <div class="progress-fill" style="width: 70%"></div>
-            </div>
-        </article>
-
-        <article class="course-card">
-            <div class="course-icon">🧩</div>
-            <h3>Data Structures</h3>
-            <p>Algorithms and problem solving</p>
-            <div class="progress-info">
-                <span>Progress</span><strong>60%</strong>
-            </div>
-            <div class="progress-track">
-                <div class="progress-fill" style="width: 60%"></div>
-            </div>
-        </article>
-
-        <article class="course-card">
-            <div class="course-icon">🗄️</div>
-            <h3>Database Systems</h3>
-            <p>SQL and database design</p>
-            <div class="progress-info">
-                <span>Progress</span><strong>90%</strong>
-            </div>
-            <div class="progress-track">
-                <div class="progress-fill" style="width: 90%"></div>
-            </div>
-        </article>
-
-        <article class="course-card">
-            <div class="course-icon">⚙️</div>
-            <h3>Software Engineering</h3>
-            <p>Design and development practices</p>
-            <div class="progress-info">
-                <span>Progress</span><strong>75%</strong>
-            </div>
-            <div class="progress-track">
-                <div class="progress-fill" style="width: 75%"></div>
-            </div>
-        </article>
-    </div>
-</section>
-<section class="dashboard-lower">
-    <article class="panel timetable-panel">
-        <div class="panel-heading">
-            <div>
-                <p class="eyebrow">PLAN YOUR WEEK</p>
-                <h2>My Timetable</h2>
-            </div>
-            <span class="panel-icon">📅</span>
-        </div>
-
-        <div class="schedule-list">
-            <div class="schedule-item">
-                <span class="day-label">MON</span>
-                <div>
-                    <strong>Web Development</strong>
-                    <p>09:00 – 11:00 · Computer Lab</p>
-                </div>
-            </div>
-
-            <div class="schedule-item">
-                <span class="day-label">TUE</span>
-                <div>
-                    <strong>Computer Networks</strong>
-                    <p>10:00 – 12:00 · Room A12</p>
-                </div>
-            </div>
-
-            <div class="schedule-item">
-                <span class="day-label">WED</span>
-                <div>
-                    <strong>Database Systems</strong>
-                    <p>08:00 – 10:00 · Room B04</p>
-                </div>
-            </div>
-
-            <div class="schedule-item">
-                <span class="day-label">THU</span>
-                <div>
-                    <strong>Data Structures</strong>
-                    <p>13:00 – 15:00 · Room C02</p>
-                </div>
-            </div>
-
-            <div class="schedule-item">
-                <span class="day-label">FRI</span>
-                <div>
-                    <strong>Software Engineering</strong>
-                    <p>09:00 – 11:00 · Room B10</p>
-                </div>
-            </div>
-        </div>
-    </article>
-
-    <article class="panel deadlines-panel">
-        <div class="panel-heading">
-            <div>
-                <p class="eyebrow">STAY ON TRACK</p>
-                <h2>Upcoming Deadlines</h2>
-            </div>
-            <span class="panel-icon">✍️</span>
-        </div>
-
-        <div class="deadline-item">
-            <div class="deadline-dot"></div>
-            <div>
-                <strong>Web Development Assignment</strong>
-                <p>Website layout practice</p>
-                <span class="deadline-date">Due tomorrow</span>
-            </div>
-        </div>
-
-        <div class="deadline-item">
-            <div class="deadline-dot"></div>
-            <div>
-                <strong>Database Project</strong>
-                <p>Design and SQL queries</p>
-                <span class="deadline-date">Due in 4 days</span>
-            </div>
-        </div>
-
-        <div class="deadline-item">
-            <div class="deadline-dot"></div>
-            <div>
-                <strong>Data Structures Quiz</strong>
-                <p>Review algorithms</p>
-                <span class="deadline-date">Due in 6 days</span>
-            </div>
-        </div>
-    </article>
-</section>
-    </main>
 
 </body>
 </html>
