@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ScholarSpace helps students organize courses, assignments, and academic goals.">
     <title>ScholarSpace | Home</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -11,70 +12,153 @@
 
     <header class="home-header">
         <a href="index.html" class="brand">
-            <span class="brand-icon">✿</span>
-            <span>
+            <span class="brand-mark">S</span>
+            <span class="brand-copy">
                 <strong>ScholarSpace</strong>
-                <small>Learn · Grow · Achieve</small>
+                <small>YOUR STUDENT SPACE</small>
             </span>
         </a>
 
-        <a href="dashboard.html" class="nav-button">
-            Open Dashboard
-        </a>
+        <nav class="home-nav" aria-label="Main navigation">
+            <a href="#features">Features</a>
+            <a href="dashboard.html" class="nav-button">Open Dashboard</a>
+        </nav>
     </header>
 
-    <main class="home-hero">
-        <section class="hero-text">
-            <p class="eyebrow">YOUR STUDENT JOURNEY STARTS HERE</p>
+    <main>
+        <section class="home-hero">
+            <div class="hero-text">
+                <p class="eyebrow">A LITTLE MORE ORGANIZED, EVERY DAY</p>
 
-            <h1>Make space for your success.</h1>
+                <h1>Make space for your <span>success.</span></h1>
 
-            <p>
-                Organize your courses, assignments, grades, and
-                daily schedule in one place.
-            </p>
+                <p class="hero-description">
+                    University life gets busy. Keep your courses, assignments,
+                    timetable, and academic progress organized in one place.
+                </p>
 
-            <a href="dashboard.html" class="primary-button">
-                Explore My Dashboard
-            </a>
+                <div class="hero-actions">
+                    <a href="dashboard.html" class="primary-button">
+                        Explore My Dashboard
+                        <span aria-hidden="true">&rarr;</span>
+                    </a>
+                    <a href="#features" class="text-link">Discover more</a>
+                </div>
+
+                <div class="hero-note">
+                    <span class="note-line"></span>
+                    <p>Small steps today can make a big difference tomorrow.</p>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="visual-topline">
+                    <span>YOUR WEEKLY RESET</span>
+                    <span class="status-dot"></span>
+                </div>
+
+                <div class="visual-heading">
+                    <p>A fresh start</p>
+                    <h2>One thing at a time.</h2>
+                </div>
+
+                <div class="visual-task">
+                    <span class="task-number">01</span>
+                    <div>
+                        <strong>Review your courses</strong>
+                        <p>Know what you are learning.</p>
+                    </div>
+                    <span class="task-check" aria-hidden="true"></span>
+                </div>
+
+                <div class="visual-task">
+                    <span class="task-number">02</span>
+                    <div>
+                        <strong>Plan your assignments</strong>
+                        <p>Give every deadline some space.</p>
+                    </div>
+                    <span class="task-check" aria-hidden="true"></span>
+                </div>
+
+                <div class="visual-task">
+                    <span class="task-number">03</span>
+                    <div>
+                        <strong>Make time to rest</strong>
+                        <p>Progress also needs balance.</p>
+                    </div>
+                    <span class="task-check" aria-hidden="true"></span>
+                </div>
+
+                <p class="visual-footer">A STUDENT SPACE, MADE SIMPLE.</p>
+            </div>
         </section>
 
-        <section class="hero-visual">
-            <h2>Small steps. Big possibilities.</h2>
-            <p>Every day is another chance to grow.</p>
+        <section class="home-features" id="features">
+            <div class="section-heading">
+                <p class="eyebrow">MADE FOR STUDENT LIFE</p>
+                <h2>A clearer way to manage your studies.</h2>
+                <p>
+                    Spend less time trying to stay organized and more time
+                    focusing on what matters.
+                </p>
+            </div>
+
+            <div class="feature-grid">
+                <article class="feature-card">
+                    <span class="feature-number">01</span>
+                    <h3>Course Overview</h3>
+                    <p>
+                        See your subjects and keep track of your learning
+                        progress throughout the semester.
+                    </p>
+                    <a href="dashboard.html#courses" class="feature-link">
+                        View courses &rarr;
+                    </a>
+                </article>
+
+                <article class="feature-card">
+                    <span class="feature-number">02</span>
+                    <h3>Assignment Planning</h3>
+                    <p>
+                        Keep upcoming tasks visible so you can plan ahead
+                        and avoid last-minute pressure.
+                    </p>
+                    <a href="dashboard.html#assignments" class="feature-link">
+                        View deadlines &rarr;
+                    </a>
+                </article>
+
+                <article class="feature-card">
+                    <span class="feature-number">03</span>
+                    <h3>Weekly Timetable</h3>
+                    <p>
+                        Have your class schedule in one place and make
+                        your study week easier to manage.
+                    </p>
+                    <a href="dashboard.html#timetable" class="feature-link">
+                        View timetable &rarr;
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <section class="home-cta">
+            <div>
+                <p class="eyebrow">YOUR NEXT STEP STARTS HERE</p>
+                <h2>Ready to get organized?</h2>
+                <p>Open your dashboard and take a look at your study week.</p>
+            </div>
+            <a href="dashboard.html" class="primary-button">
+                Go to Dashboard <span aria-hidden="true">&rarr;</span>
+            </a>
         </section>
     </main>
 
     <footer class="home-footer">
-        <p>ScholarSpace © 2026 | Learn · Grow · Achieve</p>
+        <a href="index.html" class="footer-brand">ScholarSpace</a>
+        <p>Made for learning, planning, and growing.</p>
+        <span>&copy; 2026 ScholarSpace</span>
     </footer>
-    <section class="home-features">
-    <div class="section-heading">
-        <p class="eyebrow">EVERYTHING IN ONE PLACE</p>
-        <h2>Your student life, simplified.</h2>
-        <p>Build good habits and keep your academic goals in sight.</p>
-    </div>
-
-    <div class="feature-grid">
-        <article class="feature-card">
-            <span class="feature-icon">📚</span>
-            <h3>Manage your courses</h3>
-            <p>Keep your subjects and learning progress organized.</p>
-        </article>
-
-        <article class="feature-card">
-            <span class="feature-icon">✍️</span>
-            <h3>Track assignments</h3>
-            <p>Remember deadlines and plan your work ahead of time.</p>
-        </article>
-
-        <article class="feature-card">
-            <span class="feature-icon">🌱</span>
-            <h3>Celebrate your growth</h3>
-            <p>Review your progress and stay motivated throughout the term.</p>
-        </article>
-    </div>
-</section>
 
 </body>
 </html>

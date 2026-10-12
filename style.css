@@ -5,18 +5,18 @@
    ======================================== */
 
 :root {
-    --cream: #FFF9F3;
-    --cream-dark: #F6EDE4;
-    --blush: #F3DDE0;
-    --blush-light: #FAECEC;
-    --rose: #B77983;
-    --rose-dark: #925963;
-    --brown: #493B39;
-    --muted: #897B77;
-    --border: #E9DCD4;
+    --cream: #F6F7F1;
+    --cream-dark: #E8EDE3;
+    --blush: #DCE5D8;
+    --blush-light: #EEF2E9;
+    --rose: #879B83;
+    --rose-dark: #526B53;
+    --brown: #303C32;
+    --muted: #778176;
+    --border: #DCE3D7;
     --white: #FFFFFF;
-    --success-bg: #F1EAE2;
-    --shadow: 0 12px 35px rgba(73, 59, 57, 0.06);
+    --success-bg: #E8EDE3;
+    --shadow: 0 12px 35px rgba(48, 60, 50, 0.06);
 }
 
 * {
