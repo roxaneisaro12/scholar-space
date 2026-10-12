@@ -146,3 +146,60 @@ a {
     color: var(--muted);
     line-height: 1.7;
 }
+/* Home page feature cards and footer */
+
+.home-features {
+    padding: 70px 7%;
+    background-color: var(--cream);
+}
+
+.section-heading {
+    max-width: 650px;
+    margin: 0 auto 35px;
+    text-align: center;
+}
+
+.section-heading h2 {
+    margin: 12px 0;
+    font-size: 34px;
+}
+
+.section-heading > p:last-child {
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    padding: 28px;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    background-color: white;
+}
+
+.feature-icon {
+    font-size: 30px;
+}
+
+.feature-card h3 {
+    margin-top: 20px;
+}
+
+.feature-card p {
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+.home-footer {
+    padding: 24px;
+    color: var(--muted);
+    text-align: center;
+    font-size: 13px;
+}
